@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4147098cf1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+    <title>Portafolio Dinámico - Haim Guel Quiroz</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Haim Guel Quiroz</h1>
+                <p>Desarrollador Web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades autos carros calles"
+            data-descripcion="1.- lorem ipsum">
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="persona mujer"
+            data-descripcion="1.- Es una persona mujer">
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="persona mujer"
+            data-descripcion="1.- Es una persona mujer">
+                <div class="item-contenido">
+                    <img src="img/persona2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades atardecer carros autos calles"
+            data-descripcion="1.- Ciudad de atardecer">
+                <div class="item-contenido">
+                    <img src="img/ciudad2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="animal panda oso"
+            data-descripcion="1.- Es un oso panda">
+                <div class="item-contenido">
+                    <img src="img/animal2.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="animales" 
+            data-etiquetas="animal leon"
+            data-descripcion="1.- Es leon">
+                <div class="item-contenido">
+                    <img src="img/animal1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="paisajes" 
+            data-etiquetas="paisaje montañas mar"
+            data-descripcion="1.- Es un paisaje con montañas y mar">
+                <div class="item-contenido">
+                    <img src="img/paisaje1.png" alt="">
+                </div>
+            </div>
+            
+            <div class="item" 
+            data-categoria="paisajes" 
+            data-etiquetas="paisaje montañas neblina"
+            data-descripcion="1.- Es un paisaje con montañas y neblina">
+                <div class="item-contenido">
+                    <img src="img/paisaje2.png" alt="">
+                </div>
+            </div>
+
+            <div class="item" 
+            data-categoria="naturaleza" 
+            data-etiquetas="naturaleza verde hojas planta"
+            data-descripcion="1.- Son hojas">
+                <div class="item-contenido">
+                    <img src="img/naturaleza1.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fa-solid fa-square-xmark"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                    <div class="contenedor-icono">
+                        <a href="https://twitter.com/hA1nn_TW" target="_blank" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="https://www.facebook.com/HaimGQ" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div class="contenedor-icono">
+                        <a href="https://www.instagram.com/ha1nn_ig/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por <a href="">Haim Guel Quiroz</a> </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
